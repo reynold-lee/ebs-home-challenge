@@ -1,0 +1,1 @@
+docker compose exec api sh -c "cd app && python manage.py test"

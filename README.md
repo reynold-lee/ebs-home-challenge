@@ -27,3 +27,7 @@ Build a simplified ERP-like system for managing items in a warehouse.
 
 - `cd api` to enter backend repository
 - `docker compose up` to start an API container which runs API server
+
+## Run API tests
+
+- `docker compose exec api sh -c "cd app && python manage.py test"` or `sh ./run-tests.sh` to run tests for APIs
