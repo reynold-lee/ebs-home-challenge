@@ -1,0 +1,13 @@
+version: "0.0"
+
+services:
+  api:
+    container_name: ebs-api
+    build: "."
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ./api
+        target: /app
+    command: ["python", "/app/manage.py", "runserver", "0.0.0.0:8000"]
