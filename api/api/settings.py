@@ -60,6 +60,7 @@ MIDDLEWARE = [
 # Allow below CORS Origin
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
+    'https://prod.dxm8x9cbroau0.amplifyapp.com',
 )
 
 REST_FRAMEWORK = {
